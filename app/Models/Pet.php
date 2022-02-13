@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Pet extends Model
-{
+class Pet extends Model{
+
     use HasFactory;
 
     protected $fillable = [
@@ -16,6 +16,12 @@ class Pet extends Model
     ];
 
     public function toString() {
-        return $this->name .' is a ' . $this->age . ' year old '. $this->type;
+
+        return $this->name .' is a ' . $this->type . ' and is '. $this->age  .' year old.';
     }
-}
+
+};
+
+
+
+

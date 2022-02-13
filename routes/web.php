@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//return the pets array on the home page (localhost).
+Route::get('/pets', [PetController::class, 'show']);
+
 Route::get('/info', function () {
     return phpinfo();
 });
