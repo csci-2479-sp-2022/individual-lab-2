@@ -13,6 +13,7 @@ class PetController extends Controller  {
                 'pets' => self::getPet(),
             ]);
             return null;
+
     }
 
     public static function getPet() {
@@ -22,5 +23,6 @@ class PetController extends Controller  {
             Pet::make(['name' => 'Garfield', 'age' => 40, 'type' => 'cat'])
         ];
     }
+
 
 }

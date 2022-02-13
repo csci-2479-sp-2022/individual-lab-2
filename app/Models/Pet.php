@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Pet extends Model{
+
     use HasFactory;
 
     protected $fillable = [
@@ -15,10 +16,12 @@ class Pet extends Model{
     ];
 
     public function toString() {
+
         return $this->name .' is a ' . $this->type . ' and is '. $this->age  .' year old.';
     }
 
 };
+
 
 
 
