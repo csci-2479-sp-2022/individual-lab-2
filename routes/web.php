@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// define a GET route that uses the PetController show action
+Route::get('/pets', [PetController::class, 'show']);
+
 Route::get('/info', function () {
     return phpinfo();
 });
+
