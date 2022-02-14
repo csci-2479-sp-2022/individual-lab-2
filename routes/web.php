@@ -24,5 +24,3 @@ Route::get('/pets', [PetController::class, 'show']);
 Route::get('/info', function () {
     return phpinfo();
 });
-
-Route::get('/pets', [PetController::class, 'show']);
