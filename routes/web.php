@@ -21,6 +21,10 @@ Route::get('/', function () {
 //return the pets array on the home page (localhost).
 Route::get('/pets', [PetController::class, 'show']);
 
+Route::controller(PetController::class)->group(function() {
+    Route::get('/pets', 'show');
+});
+
 Route::get('/info', function () {
     return phpinfo();
 });
