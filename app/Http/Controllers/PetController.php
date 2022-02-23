@@ -19,7 +19,7 @@ class PetController extends Controller
             ]);
     }
 
-    public static function getPets(): array {        
+    private static function getPets(): array {        
         return [
             Pet::make(['name' => 'Salem', 'age' => 8, 'type' => 'Lab']),
             Pet::make(['name' => 'Tom', 'age' => 3, 'type' => 'Hound']),
