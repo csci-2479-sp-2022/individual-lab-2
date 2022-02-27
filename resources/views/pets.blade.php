@@ -13,7 +13,7 @@
     <h1>Pet list</h1>
     <ul>
     @foreach($pets as $pet)
-        <li>{{$pet->toString()}}</li>
+        <li>{{$pet->toString()}} <a href='/pets/{{$pet->id}}'>View</a></li>
     @endforeach
     </ul>
     </div>

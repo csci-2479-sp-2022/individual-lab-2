@@ -24,3 +24,5 @@ Route::get('/info', function () {
 
 
 Route::get('/pets', [PetController::class,'show']);
+
+Route::get('/pets/{id}', [PetController::class,'view']);
