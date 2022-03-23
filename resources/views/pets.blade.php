@@ -9,7 +9,8 @@
 <body>
 
     <div><section>
-    //Add the following code to display the list of pets, calling the toString() method
+        <!-- //Add the following code to display the list of pets, calling the toString() method -->
+
 
     @foreach($pets as $pet)
         <li>{{$pet->toString()}}</li>
